@@ -3,7 +3,7 @@ Netwars API [![Build Status](https://travis-ci.org/netwars/api.svg)](https://tra
 
 Prosta aplikacja udostępniająca aktualną zawartość forum netwars.pl w postaci API. Po pobraniu i przeparsowaniu dane są zachowywane w pamięci. 
 Jeżeli w przeciągu 24 godzin nie zostanie wysłane żadne żądanie o dany `Topic`, zostaje on wymazany.
-Ponadto każdy `Topic` który znadjujący jest odświerzany co 30 sekund aż do momentu wygaśnięcia.
+Ponadto każdy `Topic` jest odświerzany co 30 sekund aż do momentu wygaśnięcia.
 
 Instalacja
 ------------
