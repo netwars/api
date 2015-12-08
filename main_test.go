@@ -60,7 +60,7 @@ func TestTopicGetHandler(t *testing.T) {
 			assert.Equal(t, requestedTopic.ForumID, topic.ForumID)
 			assert.Equal(t, requestedTopic.Title, topic.Title)
 			assert.Equal(t, requestedTopic.Posts, topic.Posts)
-			assert.Equal(t, requestedTopic.UpdatedAt, topic.UpdatedAt)
+			assert.Equal(t, requestedTopic.UpdatedAt.Unix(), topic.UpdatedAt.Unix())
 		}
 	}
 }

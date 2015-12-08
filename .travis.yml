@@ -3,6 +3,10 @@ go:
 - 1.4
 - tip
 install:
-- go get .
+- go get ./...
+- go get github.com/stretchr/testify/assert
+- go get github.com/stretchr/testify/mock
+- go get github.com/stretchr/objx
 script:
 - go build
+- go test ./...

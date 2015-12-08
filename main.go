@@ -30,7 +30,7 @@ const (
 	netwarsURL                 = "http://netwars.pl"
 )
 
-func init() {
+func main() {
 	// Flag domain. Note that gRPC transitively registers flags via its import
 	// of glog. So, we define a new flag set, to keep those domains distinct.
 	fs := flag.NewFlagSet("", flag.ExitOnError)
@@ -43,9 +43,7 @@ func init() {
 	if err := fs.Parse(os.Args[1:]); err != nil {
 		log.Fatal(err)
 	}
-}
 
-func main() {
 	logger := log.New(os.Stderr, "", log.LstdFlags)
 	u, err := url.Parse(netwarsURL)
 	if err != nil {
