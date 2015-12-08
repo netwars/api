@@ -7,9 +7,10 @@ Ponadto każdy `Topic` jest odświeżany co 30 sekund aż do momentu wygaśnięc
 
 Quick Start
 ------------
-1. Należy skonfigurować środowisko wg tego dokumentu (http://golang.org/doc/code.html#GOPATH)
-2. Instalacja `go install github.com/netwars/api`
-3. Uruchomienie `api -warmup=0`
+1. Konfiguracja: wg tego dokumentu (http://golang.org/doc/code.html#GOPATH)
+2. Instalacja: `go install github.com/netwars/api`
+3. Uruchomienie: `api -warmup=0`
+4. Test: `curl -X GET "localhost:8001/topic/167211" | python -mjson.tool`
 
 Po skompilowaniu możemy uruchomić aplikacje. Nie wymaga ona żadnych dodatkowych zależności, takich jak np baza danych.
 Opcjonalnie możemy podać flagę `-warmup`. Definiuje ona ile stron tematów ma zostać pobranych zaraz po uruchomieniu.
